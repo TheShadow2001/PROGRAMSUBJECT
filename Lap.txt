@@ -1,20 +1,32 @@
 #include<stdio.h>
-#include<math.h>
+
 int main(){
-	double a;
+	int a[7];
+	int *p = &a[7];
+	for(int i = 0; i <= 7; i++){
+		printf("Enter the number of array a a[%d]: ", i);
+		scanf("%d", &a[i]);
+	}
+	printf("\nArray a :");
+	for (int i = 0; i<=7;i++){
+		printf("%d ", *(a+i));
+	}
+	int *array = new int [7];
 	
-	printf("Enter  a : ");
-	scanf("%lf", &a);
+	array[0] = -8;
+	array[1] = 8;
+	array[2] = 11;
+	array[3] = 2;
+	array[4] = 64;
+	array[5] = 67;
+	array[6]= 55;
+	array[7] = 32;
+	printf("\n\nThe new dynamic array : ");
+	for( int i = 0; i <= 7;i++){
+		printf("%d ", array[i]);
+	}
 	
-	double x= (sin(2*a) + sin(5 * a) - sin ( 3 * a) );
-	double y= (cos(a) + 1 - pow(sin(2*a),2));
-	
-	double z1 = x / y;
-	printf("\n z1 = %lf", z1);
-	double z2 = 2 * sin(a);
-	printf("\n z2 = %lf", z2);
+	delete array;
 	return 0;
-	
-	
 	
 }
