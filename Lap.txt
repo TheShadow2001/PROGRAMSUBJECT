@@ -1,20 +1,39 @@
 #include<stdio.h>
-#include<math.h>
+
 int main(){
-	double a;
+	int n;
+	//Exercise 1 
+	printf("Enter the number of exersice 1 in system 16: ");
+	scanf("%d", &n);
+	//Exercise 2
+	printf("\nThe number in system 16: " );
+	printf("%h", n);
 	
-	printf("Enter  a : ");
-	scanf("%lf", &a);
+	// Exercise 3
+	printf("\nThe exercise 1 number in system 8: ");
+	printf("%o", n);
+	int n1;
+	printf("\nThe number in the same numeral system shifted left by 3 bits : ");
+	printf("%o", n1 = n<<3);
 	
-	double x= (sin(2*a) + sin(5 * a) - sin ( 3 * a) );
-	double y= (cos(a) + 1 - pow(sin(2*a),2));
+	// Exercise 4
+	printf("\nThe number in system 16: " );
+	printf("%o", n);
+	printf("\nThe same number in the same number system after applying the bitwise negation operation :");
+	printf("%o", ~n);
 	
-	double z1 = x / y;
-	printf("\n z1 = %lf", z1);
-	double z2 = 2 * sin(a);
-	printf("\n z2 = %lf", z2);
+	
+	//Exercise 5
+	int n2;
+	printf("\nEnter the number of exercise 5 in system 8 :");
+	scanf("%d", &n2 );
+	printf("\nThe result of the specified bit operation XOR :");
+	printf("%o", n^n2);
+	printf("\nThe result of the specified bit operation OR : ");
+	printf("%o", n|n2);
+	
+	
+	
 	return 0;
-	
-	
-	
+							
 }
