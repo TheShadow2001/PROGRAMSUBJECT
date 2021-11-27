@@ -1,16 +1,8 @@
 #include<stdio.h>
 
 int main(){
-	int a[7];
-	int *p = &a[7];
-	for(int i = 0; i <= 7; i++){
-		printf("Enter the number of array a a[%d]: ", i);
-		scanf("%d", &a[i]);
-	}
-	printf("\nArray a :");
-	for (int i = 0; i<=7;i++){
-		printf("%d ", *(a+i));
-	}
+	int a[7] = {1,2,3,4,53,13,65,1};
+	
 	int *array = new int [7];
 	
 	array[0] = -8;
